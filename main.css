@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(250, 241, 241);
+    color: #FF7518;
+    
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 750px;
+    background-color: #303030;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+.budget-tracker {
+    border-collapse: collapse;
+    min-width: 750px;
+}
+
+.budget-tracker * {
+    font-family: 'Roboto',sans-serif;
+}
+.budget-tracker th {
+    text-align: left;
+    padding: 10px 20px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+
+.budget-tracker td {
+    padding: 5px;
+    
+    
+}
+
+.input, .delete-entry {
+    height: 30px;
+    font-size: 13px;
+    padding: 0 10px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.input {
+    border: 1px solid #dddddd;
+    border-radius: 5PX;
+    outline: none;
+    margin: 5px;
+    font-size: 15px;
+
+}
+
+
+
+
+.delete-entry {
+    width: 30px;
+    background: none;
+    color: #FF7518;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.delete-entry:hover {
+    background: rgba(231, 157, 61, 0.1);
+}
+
+.controls, .summary {
+    text-align: right;
+}
+

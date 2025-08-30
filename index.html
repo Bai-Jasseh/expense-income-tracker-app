@@ -1,0 +1,92 @@
+<!-- 
+  Project: Income and Expense Tracker
+  Description: A simple income and expense tracker that helps users to add incomes and expenses of a period of time, 
+  calculate totals, and manage their entries.
+-->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker App</title>
+    <!--Linking the css code with html-->
+    <link rel="stylesheet" href="main.css">
+    
+        <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+    <h1>Income and Expense Tracker</h1>
+    <div id="app">
+        <table class="budget-tracker">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Type</th>
+                    <th>Amount</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="entries">
+                <tr>
+                    <td>
+                        <input class="input input-date" type="date">
+                    </td>
+
+                    <td>
+                        <input class="input input-description" type="text" placeholder="Add description (eg.bills)">
+                    </td>
+
+                    <td>
+                        <select class="input input-type">
+                            <option value="income">income</option>
+                            <option value="expense">expense</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <input type="number" class="input input-amount">
+                    </td>
+
+
+                    <td>
+                        <button type="button" class="delete-entry">&#10005;</button>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td colspan="5" class="controls">
+                    <button type="button" class="new-entry">New Entry</button>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot class="t-foot">
+                <tr>
+                    <td colspan="5" class="summary">
+                        <strong>Total</strong>
+                        <span class="total">D0.00</span>
+                    </td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+    </div>
+
+
+    <!--Linking js with html-->
+    <script src="main.js"></script>
+</body>
+</html>   
